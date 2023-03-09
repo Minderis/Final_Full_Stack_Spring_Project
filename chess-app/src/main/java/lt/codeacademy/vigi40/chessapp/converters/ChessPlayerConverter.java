@@ -159,5 +159,4 @@ public abstract class ChessPlayerConverter {
         Matcher matcher = emailPattern.matcher(email);
         return matcher.matches();
     }
-
 }

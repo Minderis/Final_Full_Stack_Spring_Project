@@ -2,11 +2,12 @@ package lt.codeacademy.vigi40.chessapp.servicies;
 
 import lt.codeacademy.vigi40.chessapp.entities.ChessPlayer;
 import lt.codeacademy.vigi40.chessapp.repositories.ChessPlayerRepository;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -21,17 +22,9 @@ public class ChessPlayerService {
         this.chessPlayerRepository.saveAndFlush(chessPlayer);
     }
 
-    public List<ChessPlayer> getAllChessPlayers() {
-        return chessPlayerRepository.findAll();
+    public Page<ChessPlayer> getAllChessPlayersPageable(Pageable pageable) {
+        return chessPlayerRepository.findAll(pageable);
     }
-
-//    public void replaceChessPlayerById(Long id, ChessPlayer chessPlayer) {
-//        if (!chessPlayerRepository.existsById(id)) {
-//            return;
-//        }
-//        chessPlayer.setId(id);
-//        this.chessPlayerRepository.saveAndFlush(chessPlayer);
-//    }
 
     public void editChessPlayerById(Long id, ChessPlayer chessPlayer) {
         Optional<ChessPlayer> chessPlayerToEditOptional = chessPlayerRepository.findById(id);
