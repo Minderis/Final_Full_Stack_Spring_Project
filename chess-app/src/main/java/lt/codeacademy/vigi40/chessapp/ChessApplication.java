@@ -10,16 +10,16 @@ import org.springframework.context.event.EventListener;
 @SpringBootApplication
 public class ChessApplication {
 
-	@Autowired
-	private ChessPlayerService chessPlayerService;
+    @Autowired
+    private ChessPlayerService chessPlayerService;
 
-	public static void main(String[] args) {
-		SpringApplication.run(ChessApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(ChessApplication.class, args);
+    }
 
-	@EventListener(ApplicationReadyEvent.class)
-	public void loadTestDataForTesting() {
-		this.chessPlayerService.loadTestData();
-	}
+    @EventListener(ApplicationReadyEvent.class)
+    public void loadTestDataForTesting() {
+        this.chessPlayerService.loadTestData();
+    }
 
 }

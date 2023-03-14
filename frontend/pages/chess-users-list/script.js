@@ -9,10 +9,11 @@ const pageSizeSelect = document.querySelector("#pageSizeSelect");
 const table = document.querySelector('table');
 
 let pageSize = 3;
-pageSizeSelect.value = '3';
 let currentPage = 0;
 let totalPages = 0;
 let selectedPlayerId = null;
+
+pageSizeSelect.value = '3';
 
 init();
 

@@ -25,7 +25,8 @@ public class ChessPlayerController {
     @GetMapping
     public ResponseEntity<List<ChessPlayerDTO>> getAllChessPlayersPageable(Pageable pageable) {
         Page<ChessPlayer> chessPlayers = chessPlayerService.getAllChessPlayersPageable(pageable);
-        List<ChessPlayerDTO> chessPlayerDTOs = ChessPlayerConverter.convertChessPLayerEntityListToDto(chessPlayers.toList());
+        List<ChessPlayerDTO> chessPlayerDTOs = ChessPlayerConverter.
+                convertChessPLayerEntityListToDto(chessPlayers.toList());
         HttpHeaders headers = new HttpHeaders();
         headers.add("X-Total-Count", Long.toString(chessPlayers.getTotalElements()));
         headers.add("Access-Control-Expose-Headers", "X-Total-Count");
@@ -42,7 +43,7 @@ public class ChessPlayerController {
     }
 
     @PostMapping
-    public ResponseEntity<?> addChessPlayer(@RequestBody AddChessPlayerDTO addChessPlayerDTO){
+    public ResponseEntity<?> addChessPlayer(@RequestBody AddChessPlayerDTO addChessPlayerDTO) {
         try {
             this.chessPlayerService.addChessPlayer(ChessPlayerConverter.
                     convertAddChessPlayerDtoToEntity(addChessPlayerDTO));
@@ -55,7 +56,7 @@ public class ChessPlayerController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<?> deleteChessPlayerById(@PathVariable Long id){
+    public ResponseEntity<?> deleteChessPlayerById(@PathVariable Long id) {
         ChessPlayer player = this.chessPlayerService.getChessPlayerById(id);
         if (player == null) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND)

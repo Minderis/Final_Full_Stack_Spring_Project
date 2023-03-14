@@ -147,7 +147,7 @@ public abstract class ChessPlayerConverter {
             }
             chessPlayer = new ChessPlayer();
             chessPlayer.setName(addChessPlayerDTO.getName() != null
-                    ?  addChessPlayerDTO.getName().toUpperCase() : null);
+                    ? addChessPlayerDTO.getName().toUpperCase() : null);
             chessPlayer.setSurname(addChessPlayerDTO.getSurname() != null
                     ? addChessPlayerDTO.getSurname().toUpperCase() : null);
             chessPlayer.setEmail(addChessPlayerDTO.getEmail() != null
