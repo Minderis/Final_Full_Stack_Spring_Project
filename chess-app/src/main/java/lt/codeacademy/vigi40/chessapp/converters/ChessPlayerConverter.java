@@ -242,7 +242,7 @@ public abstract class ChessPlayerConverter {
         int nm = Integer.parseInt(personCode.substring(5, 7));
         int currentDay = Calendar.getInstance().get(Calendar.DATE);
         boolean isLeapYear = ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0);
-        int maxDaysInMonth = 0;
+        int maxDaysInMonth;
         if (month == 2) {
             if (isLeapYear) {
                 maxDaysInMonth = 29;

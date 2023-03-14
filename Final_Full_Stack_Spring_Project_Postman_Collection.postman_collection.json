@@ -77,7 +77,7 @@
 								},
 								{
 									"key": "X-Total-Count",
-									"value": "17"
+									"value": "18"
 								},
 								{
 									"key": "Access-Control-Expose-Headers",
@@ -93,7 +93,7 @@
 								},
 								{
 									"key": "Date",
-									"value": "Thu, 09 Mar 2023 10:40:18 GMT"
+									"value": "Tue, 14 Mar 2023 10:29:46 GMT"
 								},
 								{
 									"key": "Keep-Alive",
@@ -105,7 +105,7 @@
 								}
 							],
 							"cookie": [],
-							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"John\",\n        \"surname\": \"Smith\",\n        \"email\": \"john.smith@gmail.com\",\n        \"sex\": \"male\",\n        \"age\": \"Can not determine age from invalid person code\",\n        \"duration\": \"22 years and 2 months\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Emma\",\n        \"surname\": \"Davis\",\n        \"email\": \"emma.davis@gmail.com\",\n        \"sex\": \"female\",\n        \"age\": \"45\",\n        \"duration\": \"23 years and 3 months\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"William\",\n        \"surname\": \"Jones\",\n        \"email\": \"william.jones@gmail.com\",\n        \"sex\": \"male\",\n        \"age\": \"Can not determine age from invalid person code\",\n        \"duration\": \"1 year\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Sophia\",\n        \"surname\": \"Wilson\",\n        \"email\": \"sophia.wilson@gmail.com\",\n        \"sex\": \"female\",\n        \"age\": \"22\",\n        \"duration\": \"10 years and 5 months\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Oliver\",\n        \"surname\": \"Martin\",\n        \"email\": \"oliver.martin@gmail.com\",\n        \"sex\": \"Can not determine the gender from invalid person code\",\n        \"age\": \"Can not determine age from invalid person code\",\n        \"duration\": \"19 years and 9 months\"\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Isabella\",\n        \"surname\": \"Garcia\",\n        \"email\": \"isabella.garcia@gmail.com\",\n        \"sex\": \"female\",\n        \"age\": \"29\",\n        \"duration\": \"21 years and 1 month\"\n    },\n    {\n        \"id\": 7,\n        \"name\": \"James\",\n        \"surname\": \"Brown\",\n        \"email\": \"james.brown@gmail.com\",\n        \"sex\": \"male\",\n        \"age\": \"31\",\n        \"duration\": \"Playing chess start date is set later than today date.\"\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Ava\",\n        \"surname\": \"Taylor\",\n        \"email\": \"ava.taylor@gmail.com\",\n        \"sex\": \"female\",\n        \"age\": \"45\",\n        \"duration\": \"25 years and 2 months\"\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Mason\",\n        \"surname\": \"Lee\",\n        \"email\": \"User has invalid email\",\n        \"sex\": \"male\",\n        \"age\": \"38\",\n        \"duration\": \"17 years and 8 months\"\n    },\n    {\n        \"id\": 10,\n        \"name\": \"Emily\",\n        \"surname\": \"Smith\",\n        \"email\": \"emily.smith@gmail.com\",\n        \"sex\": \"female\",\n        \"age\": \"37\",\n        \"duration\": \"17 years\"\n    },\n    {\n        \"id\": 11,\n        \"name\": \"Ethan\",\n        \"surname\": \"Wilson\",\n        \"email\": \"ethan.wilson@gmail.com\",\n        \"sex\": \"male\",\n        \"age\": \"20\",\n        \"duration\": \"8 years and 4 months\"\n    },\n    {\n        \"id\": 12,\n        \"name\": \"Mia\",\n        \"surname\": \"Martin\",\n        \"email\": \"mia.martin@gmail.com\",\n        \"sex\": \"female\",\n        \"age\": \"19\",\n        \"duration\": \"4 years and 7 months\"\n    },\n    {\n        \"id\": 13,\n        \"name\": \"Noah\",\n        \"surname\": \"Jones\",\n        \"email\": \"noah.jones@gmail.com\",\n        \"sex\": \"female\",\n        \"age\": \"36\",\n        \"duration\": \"26 years and 6 months\"\n    },\n    {\n        \"id\": 14,\n        \"name\": \"Charlotte\",\n        \"surname\": \"Davis\",\n        \"email\": \"charlotte.davis@gmail.com\",\n        \"sex\": \"female\",\n        \"age\": \"62\",\n        \"duration\": \"46 years and 10 months\"\n    },\n    {\n        \"id\": 15,\n        \"name\": \"Liam\",\n        \"surname\": \"Wilson\",\n        \"email\": \"liam.wilson@gmail.com\",\n        \"sex\": \"male\",\n        \"age\": \"46\",\n        \"duration\": \"25 years and 4 months\"\n    },\n    {\n        \"id\": 16,\n        \"name\": \"Amelia\",\n        \"surname\": \"Brown\",\n        \"email\": \"amelia.brown@gmail.com\",\n        \"sex\": \"female\",\n        \"age\": \"25\",\n        \"duration\": \"14 years and 1 month\"\n    },\n    {\n        \"id\": 17,\n        \"name\": \"Logan\",\n        \"surname\": \"Taylor\",\n        \"email\": \"logan.taylor@gmail.com\",\n        \"sex\": \"male\",\n        \"age\": \"42\",\n        \"duration\": \"24 years and 7 months\"\n    }\n]"
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"JOHN\",\n        \"surname\": \"SMITH\",\n        \"email\": \"john.smith@gmail.com\",\n        \"sex\": \"male\",\n        \"age\": \"Can not determine age from invalid person code\",\n        \"duration\": \"22 years and 2 months\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"EMMA\",\n        \"surname\": \"DAVIS\",\n        \"email\": \"emma.davis@gmail.com\",\n        \"sex\": \"female\",\n        \"age\": \"45\",\n        \"duration\": \"23 years and 4 months\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"WILLIAM\",\n        \"surname\": \"JONES\",\n        \"email\": \"william.jones@gmail.com\",\n        \"sex\": \"male\",\n        \"age\": \"Can not determine age from invalid person code\",\n        \"duration\": \"1 year\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"SOPHIA\",\n        \"surname\": \"WILSON\",\n        \"email\": \"sophia.wilson@gmail.com\",\n        \"sex\": \"female\",\n        \"age\": \"22\",\n        \"duration\": \"10 years and 5 months\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"OLIVER\",\n        \"surname\": \"MARTIN\",\n        \"email\": \"oliver.martin@gmail.com\",\n        \"sex\": \"Can not determine the gender from invalid person code\",\n        \"age\": \"Can not determine age from invalid person code\",\n        \"duration\": \"19 years and 9 months\"\n    },\n    {\n        \"id\": 6,\n        \"name\": \"ISABELLA\",\n        \"surname\": \"GARCIA\",\n        \"email\": \"isabella.garcia@gmail.com\",\n        \"sex\": \"female\",\n        \"age\": \"29\",\n        \"duration\": \"21 years and 1 month\"\n    },\n    {\n        \"id\": 7,\n        \"name\": \"JAMES\",\n        \"surname\": \"BROWN\",\n        \"email\": \"james.brown@gmail.com\",\n        \"sex\": \"male\",\n        \"age\": \"31\",\n        \"duration\": \"Playing chess start date is set later than today date.\"\n    },\n    {\n        \"id\": 8,\n        \"name\": \"AVA\",\n        \"surname\": \"TAYLOR\",\n        \"email\": \"ava.taylor@gmail.com\",\n        \"sex\": \"female\",\n        \"age\": \"45\",\n        \"duration\": \"25 years and 2 months\"\n    },\n    {\n        \"id\": 9,\n        \"name\": \"MASON\",\n        \"surname\": \"LEE\",\n        \"email\": \"User has invalid email\",\n        \"sex\": \"male\",\n        \"age\": \"39\",\n        \"duration\": \"17 years and 8 months\"\n    },\n    {\n        \"id\": 10,\n        \"name\": \"EMILY\",\n        \"surname\": \"SMITH\",\n        \"email\": \"emily.smith@gmail.com\",\n        \"sex\": \"female\",\n        \"age\": \"37\",\n        \"duration\": \"17 years\"\n    },\n    {\n        \"id\": 11,\n        \"name\": \"ETHAN\",\n        \"surname\": \"WILSON\",\n        \"email\": \"ethan.wilson@gmail.com\",\n        \"sex\": \"male\",\n        \"age\": \"20\",\n        \"duration\": \"8 years and 5 months\"\n    },\n    {\n        \"id\": 12,\n        \"name\": \"MIA\",\n        \"surname\": \"MARTIN\",\n        \"email\": \"mia.martin@gmail.com\",\n        \"sex\": \"female\",\n        \"age\": \"19\",\n        \"duration\": \"4 years and 8 months\"\n    },\n    {\n        \"id\": 13,\n        \"name\": \"NOAH\",\n        \"surname\": \"JONES\",\n        \"email\": \"noah.jones@gmail.com\",\n        \"sex\": \"female\",\n        \"age\": \"36\",\n        \"duration\": \"26 years and 6 months\"\n    },\n    {\n        \"id\": 14,\n        \"name\": \"CHARLOTTE\",\n        \"surname\": \"DAVIS\",\n        \"email\": \"charlotte.davis@gmail.com\",\n        \"sex\": \"female\",\n        \"age\": \"62\",\n        \"duration\": \"46 years and 10 months\"\n    },\n    {\n        \"id\": 15,\n        \"name\": \"LIAM\",\n        \"surname\": \"WILSON\",\n        \"email\": \"liam.wilson@gmail.com\",\n        \"sex\": \"male\",\n        \"age\": \"46\",\n        \"duration\": \"25 years and 4 months\"\n    },\n    {\n        \"id\": 16,\n        \"name\": \"AMELIA\",\n        \"surname\": \"BROWN\",\n        \"email\": \"amelia.brown@gmail.com\",\n        \"sex\": \"female\",\n        \"age\": \"25\",\n        \"duration\": \"14 years and 1 month\"\n    },\n    {\n        \"id\": 17,\n        \"name\": \"LOGAN\",\n        \"surname\": \"TAYLOR\",\n        \"email\": \"logan.taylor@gmail.com\",\n        \"sex\": \"male\",\n        \"age\": \"42\",\n        \"duration\": \"24 years and 8 months\"\n    },\n    {\n        \"id\": 18,\n        \"name\": \"ARTURAS\",\n        \"surname\": \"MINDERIS\",\n        \"email\": \"a.minderis@gmail.com\",\n        \"sex\": \"male\",\n        \"age\": \"43\",\n        \"duration\": \"23 years and 2 months\"\n    }\n]"
 						},
 						{
 							"name": "chess players returned with pageable option",
@@ -154,7 +154,7 @@
 								},
 								{
 									"key": "X-Total-Count",
-									"value": "17"
+									"value": "18"
 								},
 								{
 									"key": "Access-Control-Expose-Headers",
@@ -170,7 +170,7 @@
 								},
 								{
 									"key": "Date",
-									"value": "Thu, 09 Mar 2023 10:40:28 GMT"
+									"value": "Tue, 14 Mar 2023 10:29:57 GMT"
 								},
 								{
 									"key": "Keep-Alive",
@@ -182,7 +182,7 @@
 								}
 							],
 							"cookie": [],
-							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"John\",\n        \"surname\": \"Smith\",\n        \"email\": \"john.smith@gmail.com\",\n        \"sex\": \"male\",\n        \"age\": \"Can not determine age from invalid person code\",\n        \"duration\": \"22 years and 2 months\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Emma\",\n        \"surname\": \"Davis\",\n        \"email\": \"emma.davis@gmail.com\",\n        \"sex\": \"female\",\n        \"age\": \"45\",\n        \"duration\": \"23 years and 3 months\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"William\",\n        \"surname\": \"Jones\",\n        \"email\": \"william.jones@gmail.com\",\n        \"sex\": \"male\",\n        \"age\": \"Can not determine age from invalid person code\",\n        \"duration\": \"1 year\"\n    }\n]"
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"JOHN\",\n        \"surname\": \"SMITH\",\n        \"email\": \"john.smith@gmail.com\",\n        \"sex\": \"male\",\n        \"age\": \"Can not determine age from invalid person code\",\n        \"duration\": \"22 years and 2 months\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"EMMA\",\n        \"surname\": \"DAVIS\",\n        \"email\": \"emma.davis@gmail.com\",\n        \"sex\": \"female\",\n        \"age\": \"45\",\n        \"duration\": \"23 years and 4 months\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"WILLIAM\",\n        \"surname\": \"JONES\",\n        \"email\": \"william.jones@gmail.com\",\n        \"sex\": \"male\",\n        \"age\": \"Can not determine age from invalid person code\",\n        \"duration\": \"1 year\"\n    }\n]"
 						}
 					]
 				},
@@ -241,7 +241,7 @@
 								},
 								{
 									"key": "Date",
-									"value": "Thu, 09 Mar 2023 10:40:42 GMT"
+									"value": "Tue, 14 Mar 2023 10:30:30 GMT"
 								},
 								{
 									"key": "Keep-Alive",
@@ -253,7 +253,7 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n    \"id\": 1,\n    \"name\": \"John\",\n    \"surname\": \"Smith\",\n    \"email\": \"john.smith@gmail.com\",\n    \"personCode\": \"**********\",\n    \"startPlayChessFromDate\": \"2000-12-31\"\n}"
+							"body": "{\n    \"id\": 1,\n    \"name\": \"JOHN\",\n    \"surname\": \"SMITH\",\n    \"email\": \"john.smith@gmail.com\",\n    \"personCode\": \"***********\",\n    \"startPlayChessFromDate\": \"2000-12-31\"\n}"
 						},
 						{
 							"name": "chess player by id was not found",
@@ -303,7 +303,7 @@
 								},
 								{
 									"key": "Date",
-									"value": "Thu, 09 Mar 2023 10:40:49 GMT"
+									"value": "Tue, 14 Mar 2023 10:30:39 GMT"
 								},
 								{
 									"key": "Keep-Alive",
@@ -385,12 +385,16 @@
 									"value": "Access-Control-Request-Headers"
 								},
 								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
 									"key": "Content-Length",
-									"value": "0"
+									"value": "35"
 								},
 								{
 									"key": "Date",
-									"value": "Wed, 08 Mar 2023 14:34:30 GMT"
+									"value": "Tue, 14 Mar 2023 10:31:11 GMT"
 								},
 								{
 									"key": "Keep-Alive",
@@ -402,7 +406,327 @@
 								}
 							],
 							"cookie": [],
-							"body": null
+							"body": "Chess player was added successfully"
+						},
+						{
+							"name": "chess player name illegal characters",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"name\": \"Arturas;\",\n        \"surname\": \"Minderis\",\n        \"email\": \"a.minderis@gmail.com\",\n        \"personCode\": 38002290250,\n        \"startPlayChessFromDate\": \"2000-01-01\"\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_Url}}/chess_player",
+									"host": [
+										"{{base_Url}}"
+									],
+									"path": [
+										"chess_player"
+									]
+								}
+							},
+							"status": "Unprocessable Entity (WebDAV) (RFC 4918)",
+							"code": 422,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "75"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 14 Mar 2023 10:31:31 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Name must be at least 2 characters long and contain only letters and hyphen"
+						},
+						{
+							"name": "chess player surname illegal characters",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"name\": \"Arturas\",\n        \"surname\": \"Mind;eris\",\n        \"email\": \"a.minderis@gmail.com\",\n        \"personCode\": 38002290250,\n        \"startPlayChessFromDate\": \"2000-01-01\"\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_Url}}/chess_player",
+									"host": [
+										"{{base_Url}}"
+									],
+									"path": [
+										"chess_player"
+									]
+								}
+							},
+							"status": "Unprocessable Entity (WebDAV) (RFC 4918)",
+							"code": 422,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "78"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 14 Mar 2023 10:32:18 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Surname must be at least 2 characters long and contain only letters and hyphen"
+						},
+						{
+							"name": "chess player email invalid format",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"name\": \"Arturas\",\n        \"surname\": \"Minderis\",\n        \"email\": \"a.minderis@gmailcom\",\n        \"personCode\": 38002290250,\n        \"startPlayChessFromDate\": \"2000-01-01\"\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_Url}}/chess_player",
+									"host": [
+										"{{base_Url}}"
+									],
+									"path": [
+										"chess_player"
+									]
+								}
+							},
+							"status": "Unprocessable Entity (WebDAV) (RFC 4918)",
+							"code": 422,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "20"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 14 Mar 2023 10:32:41 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Invalid email format"
+						},
+						{
+							"name": "chess player person code does not exist",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"name\": \"Arturas\",\n        \"surname\": \"Minderis\",\n        \"email\": \"a.minderis@gmail.com\",\n        \"personCode\": 37902290250,\n        \"startPlayChessFromDate\": \"2000-01-01\"\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_Url}}/chess_player",
+									"host": [
+										"{{base_Url}}"
+									],
+									"path": [
+										"chess_player"
+									]
+								}
+							},
+							"status": "Unprocessable Entity (WebDAV) (RFC 4918)",
+							"code": 422,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "39"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 14 Mar 2023 10:33:11 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Person code should meet LT requirements"
+						},
+						{
+							"name": "start play chess date is upcoming date",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"name\": \"Arturas\",\n        \"surname\": \"Minderis\",\n        \"email\": \"a.minderis@gmail.com\",\n        \"personCode\": 38002290250,\n        \"startPlayChessFromDate\": \"2024-02-02\"\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_Url}}/chess_player",
+									"host": [
+										"{{base_Url}}"
+									],
+									"path": [
+										"chess_player"
+									]
+								}
+							},
+							"status": "Unprocessable Entity (WebDAV) (RFC 4918)",
+							"code": 422,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "59"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 14 Mar 2023 10:43:28 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Start play chess from date cannot be empty or upcoming date"
 						}
 					]
 				},
@@ -728,6 +1052,361 @@
 							],
 							"cookie": [],
 							"body": "Chess player with id: 222 was not found"
+						},
+						{
+							"name": "name invalid",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"name\": \"Arturas;\",\n        \"surname\": \"Minderis\",\n        \"email\": \"arturas@gmail.com\",\n        \"personCode\": \"52304280250\",\n        \"startPlayChessFromDate\": \"2022-01-01\"\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_Url}}/chess_player/:chessPlayerId",
+									"host": [
+										"{{base_Url}}"
+									],
+									"path": [
+										"chess_player",
+										":chessPlayerId"
+									],
+									"variable": [
+										{
+											"key": "chessPlayerId",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"status": "Unprocessable Entity (WebDAV) (RFC 4918)",
+							"code": 422,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "75"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 14 Mar 2023 10:48:20 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Name must be at least 2 characters long and contain only letters and hyphen"
+						},
+						{
+							"name": "surname invalid",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"name\": \"Arturas\",\n        \"surname\": \"Minderis;\",\n        \"email\": \"arturas@gmail.com\",\n        \"personCode\": \"52304280250\",\n        \"startPlayChessFromDate\": \"2022-01-01\"\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_Url}}/chess_player/:chessPlayerId",
+									"host": [
+										"{{base_Url}}"
+									],
+									"path": [
+										"chess_player",
+										":chessPlayerId"
+									],
+									"variable": [
+										{
+											"key": "chessPlayerId",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"status": "Unprocessable Entity (WebDAV) (RFC 4918)",
+							"code": 422,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "78"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 14 Mar 2023 10:48:39 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Surname must be at least 2 characters long and contain only letters and hyphen"
+						},
+						{
+							"name": "email invalid",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"name\": \"Arturas\",\n        \"surname\": \"Minderis\",\n        \"email\": \"arturasgmail.com\",\n        \"personCode\": \"52304280250\",\n        \"startPlayChessFromDate\": \"2022-01-01\"\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_Url}}/chess_player/:chessPlayerId",
+									"host": [
+										"{{base_Url}}"
+									],
+									"path": [
+										"chess_player",
+										":chessPlayerId"
+									],
+									"variable": [
+										{
+											"key": "chessPlayerId",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"status": "Unprocessable Entity (WebDAV) (RFC 4918)",
+							"code": 422,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "20"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 14 Mar 2023 10:48:55 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Invalid email format"
+						},
+						{
+							"name": "person code invalid",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"name\": \"Arturas\",\n        \"surname\": \"Minderis\",\n        \"email\": \"arturas@gmail.com\",\n        \"personCode\": \"52404280250\",\n        \"startPlayChessFromDate\": \"2022-01-01\"\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_Url}}/chess_player/:chessPlayerId",
+									"host": [
+										"{{base_Url}}"
+									],
+									"path": [
+										"chess_player",
+										":chessPlayerId"
+									],
+									"variable": [
+										{
+											"key": "chessPlayerId",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"status": "Unprocessable Entity (WebDAV) (RFC 4918)",
+							"code": 422,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "39"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 14 Mar 2023 10:49:14 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Person code should meet LT requirements"
+						},
+						{
+							"name": "start play chess date invalid",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"name\": \"Arturas\",\n        \"surname\": \"Minderis\",\n        \"email\": \"arturas@gmail.com\",\n        \"personCode\": \"52204280250\",\n        \"startPlayChessFromDate\": \"2024-05-05\"\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_Url}}/chess_player/:chessPlayerId",
+									"host": [
+										"{{base_Url}}"
+									],
+									"path": [
+										"chess_player",
+										":chessPlayerId"
+									],
+									"variable": [
+										{
+											"key": "chessPlayerId",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"status": "Unprocessable Entity (WebDAV) (RFC 4918)",
+							"code": 422,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "59"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 14 Mar 2023 10:49:50 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Start play chess from date cannot be empty or upcoming date"
 						}
 					]
 				}
