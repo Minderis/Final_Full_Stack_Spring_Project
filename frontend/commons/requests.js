@@ -11,3 +11,30 @@ export const deletePlayerById = async (id) => {
     });
     return response;
   };
+
+  export const getPlayerByID = async (id) => {
+    const response = await fetch(`${API_BASE_URL}/chess_player/${id}`);
+    return response;
+  };
+
+  export const savePlayer = async (player) => {
+    const response = await fetch(`${API_BASE_URL}/chess_player`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(player),
+    });
+    return response;
+  };
+
+  export const editPlayer = async (player, id) => {
+    const response = await fetch(`${API_BASE_URL}/chess_player/${id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(player),
+    });
+    return response;
+  };

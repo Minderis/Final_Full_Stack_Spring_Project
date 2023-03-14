@@ -10,6 +10,7 @@ import java.time.Month;
 import java.time.Period;
 import java.time.Year;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -67,7 +68,7 @@ public abstract class ChessPlayerConverter {
             editChessPlayerDTO.setName(chessPlayer.getName());
             editChessPlayerDTO.setSurname(chessPlayer.getSurname());
             editChessPlayerDTO.setEmail(chessPlayer.getEmail());
-            editChessPlayerDTO.setPersonCode("**********");
+            editChessPlayerDTO.setPersonCode("***********");
             editChessPlayerDTO.setStartPlayChessFromDate(chessPlayer.getStartPlayChessFromDate());
         }
         return editChessPlayerDTO;
@@ -87,10 +88,70 @@ public abstract class ChessPlayerConverter {
     public static ChessPlayer convertAddChessPlayerDtoToEntity(AddChessPlayerDTO addChessPlayerDTO) {
         ChessPlayer chessPlayer = null;
         if (addChessPlayerDTO != null) {
+            if (addChessPlayerDTO.getName() == null || !addChessPlayerDTO.getName().
+                    matches("^[A-Za-z\\-]{2,}$")) {
+                throw new IllegalArgumentException(
+                        "Name must be at least 2 characters long and contain only letters and hyphen");
+            }
+            if (addChessPlayerDTO.getSurname() == null || !addChessPlayerDTO.getSurname().
+                    matches("^[A-Za-z\\-]{2,}$")) {
+                throw new IllegalArgumentException("" +
+                        "Surname must be at least 2 characters long and contain only letters and hyphen");
+            }
+            if (addChessPlayerDTO.getEmail() == null || !addChessPlayerDTO.getEmail().
+                    matches("^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$")) {
+                throw new IllegalArgumentException("Invalid email format");
+            }
+            if (addChessPlayerDTO.getPersonCode() == null
+                    || !isValidPersonCode(addChessPlayerDTO.getPersonCode().toString())) {
+                throw new IllegalArgumentException("Person code should meet LT requirements");
+            }
+            if (addChessPlayerDTO.getStartPlayChessFromDate() == null
+                    || addChessPlayerDTO.getStartPlayChessFromDate().compareTo(LocalDate.now()) > 0) {
+                throw new IllegalArgumentException("Start play chess from date cannot be empty or upcoming date");
+            }
             chessPlayer = new ChessPlayer();
-            chessPlayer.setName(addChessPlayerDTO.getName());
-            chessPlayer.setSurname(addChessPlayerDTO.getSurname());
-            chessPlayer.setEmail(addChessPlayerDTO.getEmail());
+            chessPlayer.setName(addChessPlayerDTO.getName().toUpperCase());
+            chessPlayer.setSurname(addChessPlayerDTO.getSurname().toUpperCase());
+            chessPlayer.setEmail(addChessPlayerDTO.getEmail().toLowerCase());
+            chessPlayer.setPersonCode(addChessPlayerDTO.getPersonCode());
+            chessPlayer.setStartPlayChessFromDate(addChessPlayerDTO.getStartPlayChessFromDate());
+        }
+        return chessPlayer;
+    }
+
+    public static ChessPlayer convertAddChessPlayerDtoToEntityForEditRecord(AddChessPlayerDTO addChessPlayerDTO) {
+        ChessPlayer chessPlayer = null;
+        if (addChessPlayerDTO != null) {
+            if (addChessPlayerDTO.getName() != null && !addChessPlayerDTO.getName().
+                    matches("^[A-Za-z\\-]{2,}$")) {
+                throw new IllegalArgumentException(
+                        "Name must be at least 2 characters long and contain only letters and hyphen");
+            }
+            if (addChessPlayerDTO.getSurname() != null && !addChessPlayerDTO.getSurname().
+                    matches("^[A-Za-z\\-]{2,}$")) {
+                throw new IllegalArgumentException("" +
+                        "Surname must be at least 2 characters long and contain only letters and hyphen");
+            }
+            if (addChessPlayerDTO.getEmail() != null && !addChessPlayerDTO.getEmail().
+                    matches("^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$")) {
+                throw new IllegalArgumentException("Invalid email format");
+            }
+            if (addChessPlayerDTO.getPersonCode() != null
+                    && !isValidPersonCode(addChessPlayerDTO.getPersonCode().toString())) {
+                throw new IllegalArgumentException("Person code should meet LT requirements");
+            }
+            if (addChessPlayerDTO.getStartPlayChessFromDate() != null
+                    && addChessPlayerDTO.getStartPlayChessFromDate().compareTo(LocalDate.now()) > 0) {
+                throw new IllegalArgumentException("Start play chess from date cannot be empty or upcoming date");
+            }
+            chessPlayer = new ChessPlayer();
+            chessPlayer.setName(addChessPlayerDTO.getName() != null
+                    ?  addChessPlayerDTO.getName().toUpperCase() : null);
+            chessPlayer.setSurname(addChessPlayerDTO.getSurname() != null
+                    ? addChessPlayerDTO.getSurname().toUpperCase() : null);
+            chessPlayer.setEmail(addChessPlayerDTO.getEmail() != null
+                    ? addChessPlayerDTO.getEmail().toLowerCase() : null);
             chessPlayer.setPersonCode(addChessPlayerDTO.getPersonCode());
             chessPlayer.setStartPlayChessFromDate(addChessPlayerDTO.getStartPlayChessFromDate());
         }
@@ -158,5 +219,50 @@ public abstract class ChessPlayerConverter {
         }
         Matcher matcher = emailPattern.matcher(email);
         return matcher.matches();
+    }
+
+    private static boolean isValidPersonCode(String personCode) {
+        if (personCode == null || personCode.length() != 11) {
+            return false;
+        }
+        int sex = Character.getNumericValue(personCode.charAt(0));
+        if (sex < 3 || sex > 6) {
+            return false;
+        }
+        int year = Integer.parseInt(personCode.substring(1, 3));
+        int currentYear = Calendar.getInstance().get(Calendar.YEAR) % 100;
+        if ((sex < 5 && (year < 0 || year > 99)) || (sex >= 5 && (year < 0 || year > currentYear))) {
+            return false;
+        }
+        int month = Integer.parseInt(personCode.substring(3, 5));
+        int currentMonth = Calendar.getInstance().get(Calendar.MONTH) + 1;
+        if (month < 1 || (year == currentYear && month > currentMonth) || month > 12) {
+            return false;
+        }
+        int nm = Integer.parseInt(personCode.substring(5, 7));
+        int currentDay = Calendar.getInstance().get(Calendar.DATE);
+        boolean isLeapYear = ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0);
+        int maxDaysInMonth = 0;
+        if (month == 2) {
+            if (isLeapYear) {
+                maxDaysInMonth = 29;
+            } else {
+                maxDaysInMonth = 28;
+            }
+        } else if (month == 4 || month == 6 || month == 9 || month == 11) {
+            maxDaysInMonth = 30;
+        } else {
+            maxDaysInMonth = 31;
+        }
+        if (nm < 1 || (year == currentYear && month == currentMonth && nm > currentDay) || nm > maxDaysInMonth) {
+            return false;
+        }
+        String fourDigits = personCode.substring(7);
+        for (int i = 0; i < fourDigits.length(); i++) {
+            if (!Character.isDigit(fourDigits.charAt(i))) {
+                return false;
+            }
+        }
+        return true;
     }
 }

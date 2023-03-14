@@ -19,8 +19,17 @@ init();
 function init() {
     loadPlayers(currentPage);
     pageSizeSelect.addEventListener("change", onPageSizeChange);
+    addBtn.addEventListener("click", onAddButtonClick);
+    editBtn.addEventListener("click", onEditButtonClick);
     deleteBtn.addEventListener("click", onDeleteButtonClick);
     document.addEventListener('click', onClickOutsideTable);
+}
+
+async function getTotalPages() {
+    const response = await getPlayers(0, pageSize);
+    const totalCount = parseInt(response.headers.get("X-Total-Count"));
+    totalPages = Math.ceil(totalCount / pageSize);
+    return totalPages;
 }
 
 async function loadPlayers(page) {
@@ -56,7 +65,6 @@ async function loadPlayers(page) {
 function createTableRow(player) {
     const row = document.createElement("tr");
     row.innerHTML = `
-    <td>${player.id}</td>
     <td>${player.name}</td>
     <td>${player.surname}</td>
     <td>${player.email}</td>
@@ -100,8 +108,15 @@ function onPageSizeChange(event) {
 
 async function onDeleteButtonClick() {
     try {
+        const id = selectedPlayerId;
         const response = await deletePlayerById(selectedPlayerId);
         if (response.ok) {
+            alert(`Player with id: ${id} deleted successfully!`);
+            // switch to lower page if was deleted last element in current page
+            const totalPages = await getTotalPages();
+            if (currentPage == totalPages) {
+                currentPage = totalPages - 1;
+            }
             loadPlayers(currentPage);
         } else {
             console.error(response.status);
@@ -109,6 +124,14 @@ async function onDeleteButtonClick() {
     } catch (error) {
         console.error(error);
     }
+}
+
+async function onAddButtonClick() {
+    window.location.replace("../chess-user-form/chess-user-form.html");
+}
+
+async function onEditButtonClick() {
+    window.location.replace(`../chess-user-form/chess-user-form.html?id=${selectedPlayerId}`);
 }
 
 function updateDeleteEditButtonsState() {

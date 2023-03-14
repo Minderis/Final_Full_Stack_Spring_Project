@@ -32,8 +32,6 @@ public class ChessPlayerController {
         return ResponseEntity.ok().headers(headers).body(chessPlayerDTOs);
     }
 
-
-
     @GetMapping("/{id}")
     public ResponseEntity<?> getChessPlayerById(@PathVariable Long id) {
         ChessPlayer player = this.chessPlayerService.getChessPlayerById(id);
@@ -44,8 +42,16 @@ public class ChessPlayerController {
     }
 
     @PostMapping
-    public void addChessPlayer(@RequestBody AddChessPlayerDTO addChessPlayerDTO){
-        this.chessPlayerService.addChessPlayer(ChessPlayerConverter.convertAddChessPlayerDtoToEntity(addChessPlayerDTO));
+    public ResponseEntity<?> addChessPlayer(@RequestBody AddChessPlayerDTO addChessPlayerDTO){
+        try {
+            this.chessPlayerService.addChessPlayer(ChessPlayerConverter.
+                    convertAddChessPlayerDtoToEntity(addChessPlayerDTO));
+            return ResponseEntity.status(HttpStatus.OK)
+                    .body("Chess player was added successfully");
+        } catch (IllegalArgumentException e) {
+            return ResponseEntity.status(HttpStatus.UNPROCESSABLE_ENTITY)
+                    .body(e.getMessage());
+        }
     }
 
     @DeleteMapping("/{id}")
@@ -69,10 +75,15 @@ public class ChessPlayerController {
             return ResponseEntity.status(HttpStatus.NOT_FOUND)
                     .body("Chess player with id: " + id + " was not found");
         } else {
-            this.chessPlayerService
-                    .editChessPlayerById(id, ChessPlayerConverter.convertAddChessPlayerDtoToEntity(addChessPlayerDTO));
-            return ResponseEntity.status(HttpStatus.OK)
-                    .body("Chess player with id: " + id + " was modified successfully");
+            try {
+                this.chessPlayerService.editChessPlayerById(id,
+                        ChessPlayerConverter.convertAddChessPlayerDtoToEntityForEditRecord(addChessPlayerDTO));
+                return ResponseEntity.status(HttpStatus.OK)
+                        .body("Chess player with id: " + id + " was modified successfully");
+            } catch (IllegalArgumentException e) {
+                return ResponseEntity.status(HttpStatus.UNPROCESSABLE_ENTITY)
+                        .body(e.getMessage());
+            }
         }
     }
 }
