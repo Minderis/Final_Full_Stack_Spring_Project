@@ -106,6 +106,48 @@ public class ChessPlayerService {
                 49710202109L, LocalDate.of(2009, 1, 25)));
         chessPlayers.add(new ChessPlayer("LOGAN", "TAYLOR", "logan.taylor@gmail.com",
                 38011294011L, LocalDate.of(1998, 7, 12)));
+        chessPlayers.add(new ChessPlayer("EGLE", "KAZLAUSKAITIS", "egle.kazlauskaitis@gmail.com",
+                48504136129L, LocalDate.of(2006, 3, 7)));
+        chessPlayers.add(new ChessPlayer("KESTAS", "JANKAUSKAS", "kestas.jankauskas@gmail.com",
+                50205023020L, LocalDate.of(2014, 10, 14)));
+        chessPlayers.add(new ChessPlayer("MILDA", "PETRAUSKAITE", "milda.petrauskaite@gmail.com",
+                60306210153L, LocalDate.of(2018, 7, 12)));
+        chessPlayers.add(new ChessPlayer("NOJUS", "JONAITIS", "nojus.jonaitis@gmail.com",
+                38607230113L, LocalDate.of(1996, 8, 28)));
+        chessPlayers.add(new ChessPlayer("LAURA", "VAITKUTE", "laura.vaitkute@gmail.com",
+                46008308154L, LocalDate.of(1976, 4, 21)));
+        chessPlayers.add(new ChessPlayer("LEONARDAS", "URBONAS", "leonardas.urbonas@gmail.com",
+                37609084023L, LocalDate.of(1997, 11, 2)));
+        chessPlayers.add(new ChessPlayer("AGOTA", "BRAZAUSKAITĖ", "agota.brazauskaite@gmail.com",
+                49710202109L, LocalDate.of(2009, 1, 25)));
+        chessPlayers.add(new ChessPlayer("ADOMAS", "KAVALIAUSKAS", "adomas.kavaliauskas@gmail.com",
+                38011294011L, LocalDate.of(1998, 7, 12)));
+        chessPlayers.add(new ChessPlayer("AIDAS", "PETRAUSKAS", "aidas.petrauskas@gmail.com",
+                39710202110L, LocalDate.of(1991, 5, 15)));
+        chessPlayers.add(new ChessPlayer("ROKAS", "NAVICKAS", "rokas.navickas@gmail.com",
+                38011294012L, LocalDate.of(1987, 2, 28)));
+        chessPlayers.add(new ChessPlayer("VAIDA", "KAZLAUSKAITE", "vaida.kazlauskaite@gmail.com",
+                48504136130L, LocalDate.of(2002, 9, 2)));
+        chessPlayers.add(new ChessPlayer("GYTIS", "JANKAUSKAS", "gytis.jankauskas@gmail.com",
+                50205023021L, LocalDate.of(2011, 12, 18)));
+        chessPlayers.add(new ChessPlayer("Agnė", "GUDAITE", "agne.gudaite@gmail.com",
+                60306210154L, LocalDate.of(2017, 11, 9)));
+        chessPlayers.add(new ChessPlayer("LUCÍA", "GONZÁLEZ", "lucia.gonzalez@gmail.com",
+                40406070707L, LocalDate.of(2002, 9, 18)));
+        chessPlayers.add(new ChessPlayer("JUAN", "MARTÍNEZ", "juan.martinez@gmail.com",
+                50809050723L, LocalDate.of(2010, 2, 2)));
+        chessPlayers.add(new ChessPlayer("SOFÍA", "HERNÁNDEZ", "sofia.hernandez@gmail.com",
+                60102030405L, LocalDate.of(2007, 12, 8)));
+        chessPlayers.add(new ChessPlayer("DIEGO", "LÓPEZ", "diego.lopez@gmail.com",
+                38011223344L, LocalDate.of(2004, 5, 11)));
+        chessPlayers.add(new ChessPlayer("MARTA", "SÁNCHEZ", "marta.sanchez@gmail.com",
+                60205060708L, LocalDate.of(2012, 8, 2)));
+        chessPlayers.add(new ChessPlayer("JAVIER", "GARCÍA", "javier.garcia@gmail.com",
+                37404150515L, LocalDate.of(1985, 11, 20)));
+        chessPlayers.add(new ChessPlayer("LAURA", "PÉREZ", "laura.perez@gmail.com",
+                41112131415L, LocalDate.of(1999, 4, 1)));
+        chessPlayers.add(new ChessPlayer("CARLOS", "RODRÍGUEZ", "carlos.rodriguez@gmail.com",
+                32303242526L, LocalDate.of(1977, 6, 25)));
         this.chessPlayerRepository.saveAllAndFlush(chessPlayers);
     }
 }
