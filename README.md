@@ -4,7 +4,7 @@
 This is a web application for managing chess players. It allows users to add, edit, and delete chess players, as well as view a list of all players.
 ## Tech Stack
 
-**Client:** HTML, CSS, JavaScript
+**Client:** HTML, SCSS, JavaScript
 
 **Server:** Java 17, Maven, Spring Boot, H2
 
@@ -66,6 +66,10 @@ There is many ways to deploy front-end part. Here is a few examples:
   python3 -m http.server || python -m SimpleHTTPServer
   ```
 3. Launch it from Visual Studio Code with Live Server
+
+p.s. before running front-end you should compile .scss files to .css with any preprocessor, like:
+
+Node-sass, Dart Sass or use extension for Visual Studio Code to compile .scss, like Live Sass Compiler.
 
 **Browser**
 
