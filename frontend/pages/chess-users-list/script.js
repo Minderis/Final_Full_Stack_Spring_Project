@@ -140,8 +140,8 @@ async function onDeleteButtonClick() {
         if (response.ok) {
             alert(`Player with id: ${id} deleted successfully!`);
             // switch to lower page if was deleted last element in current page
-            if (currentPage == totalPages) {
-                currentPage = totalPages - 1;
+            if (currentPage == totalPages - 1 && lastPageLeftItemsToAdd == 1) {
+                currentPage = currentPage - 1;
             }
             loadPlayers(currentPage);
         } else {

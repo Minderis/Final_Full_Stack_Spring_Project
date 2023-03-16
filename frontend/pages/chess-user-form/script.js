@@ -63,7 +63,7 @@ const handleFormSubmit = async (callback) => {
 
         try {
             const response = await callback(player, playerId);
-            const page = playerId ? fromPage : totalPages - (lastPageLeftItemsToAdd ? 1 : 0);
+            const page = playerId ? fromPage : totalPages - (lastPageLeftItemsToAdd == 0 ? 0 : 1);
             const message = playerId
                 ? `Player with id: ${playerId} modified successfully!`
                 : `New player added successfully!`;
