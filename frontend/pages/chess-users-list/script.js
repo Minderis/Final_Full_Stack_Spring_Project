@@ -156,6 +156,7 @@ function onAddButtonClick() {
     const queryParams = new URLSearchParams({
         totalPages: totalPages,
         fromPageSize: pageSize,
+        fromPage: currentPage,
         lastPageLeftItemsToAdd: lastPageLeftItemsToAdd
     });
     window.location.replace(`../chess-user-form/chess-user-form.html?${queryParams}`);
