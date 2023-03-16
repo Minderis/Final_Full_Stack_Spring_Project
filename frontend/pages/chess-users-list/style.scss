@@ -1,0 +1,103 @@
+// Variables
+$bg-image: url("./../../img/bg_img3.jpg");
+$bg-opacity: 0.7;
+$primary-color: #4caf50;
+$secondary-color: #ddd;
+$light-bg-color: #f2f2f2;
+$hover-bg-color: #ddd;
+$active-color: #ffc107;
+$disabled-bg-color: grey;
+$disabled-border-color: grey;
+$disabled-text-color: white;
+$border-radius: 15px;
+
+// Styles
+body {
+  z-index: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: $bg-image no-repeat center center / cover;
+  opacity: $bg-opacity;
+  z-index: -1;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.container {
+  margin-top: 10vh;
+  width: 80vw;
+  background-color: white;
+  border-radius: $border-radius;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid $secondary-color;
+}
+
+.theader {
+  background-color: $primary-color;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: $light-bg-color;
+}
+
+.pagination {
+  display: inline-block;
+  margin: 20px 0;
+}
+
+.pagination a {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid $secondary-color;
+}
+
+.pagination a.active {
+  background-color: $primary-color;
+  color: white;
+  border: 1px solid $primary-color;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: $hover-bg-color;
+}
+
+.selected {
+  background-color: $active-color !important;
+}
+
+.tbody tr:hover {
+  background-color: lightyellow;
+}
+
+.btn:disabled {
+  background-color: $disabled-bg-color;
+  border-color: $disabled-border-color;
+  color: $disabled-text-color;
+}
+
+button {
+  margin: 15px 0;
+}
+
+#pageSizeSelect {
+  margin-bottom: 20px;
+}
+
+.nav-button {
+  margin-left: 5px;
+  margin-right: 5px;
+}
