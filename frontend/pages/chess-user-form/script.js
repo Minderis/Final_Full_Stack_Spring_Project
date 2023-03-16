@@ -63,6 +63,8 @@ const handleFormSubmit = async (callback) => {
 
         try {
             const response = await callback(player, playerId);
+            // Get page where to redirect after success operation: 
+            // on user edit - stay same page, on adding new user - go to last page
             const page = playerId ? fromPage : totalPages - (lastPageLeftItemsToAdd == 0 ? 0 : 1);
             const message = playerId
                 ? `Player with id: ${playerId} modified successfully!`

@@ -139,7 +139,7 @@ async function onDeleteButtonClick() {
         const response = await deletePlayerById(selectedPlayerId);
         if (response.ok) {
             alert(`Player with id: ${id} deleted successfully!`);
-            // switch to lower page if was deleted last element in current page
+            // switch to lower page if was deleted last element in last page
             if (currentPage == totalPages - 1 && lastPageLeftItemsToAdd == 1) {
                 currentPage = currentPage - 1;
             }
